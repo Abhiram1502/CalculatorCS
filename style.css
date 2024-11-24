@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3B4664;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252D44;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px;
+    margin-top: 5px;
+}
+.screen{
+    border: none;
+    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #181F32;
+    margin: 5px;
+    box-shadow:inset 2px 2px 2px 2px #1f2538;
+    text-align: right;
+}
+.buttons{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4,1fr);
+}
+.button{
+    font-size: 15px;
+    padding: 8px;
+    height: 40px;
+    width: 45px;
+    margin-top: 13px;
+    cursor: pointer;
+    color: #2C303B;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    background-image: linear-gradient(rgb(233, 219, 219),white);
+    box-shadow:inset 0px -3px #beb5b5,inset 0px 0px 1px #beb5b5
+    ,inset 1px 0px 0px #beb5b5;
+    border-radius: 5px;
+    border: none;
+}
+.equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: 40px;
+    margin-top: 13px;
+    color: white;
+    box-shadow:inset 0px -3px #7885ab,inset 0px 0px 1px #7885ab
+    ,inset 1px 0px 0px #7885ab;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #647299;
+}
+.watermark{
+    color:  #3B4664;
+    position: relative;
+    left: 30vw;
+    top: 5vh;
+    cursor:pointer;
+    padding: 8px;
+    border: 0.1px solid #3B4664;
+}
+.watermark:hover{
+    display: block;
+    color: white;
+    transition: 1s ease;
+    border: 0.1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
